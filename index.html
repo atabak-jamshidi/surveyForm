@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
   <title>SurveyForm</title>
 </head>
 
@@ -14,25 +15,31 @@
     <p id="description">made by atabak jamshidi</p>
     <form action="" id="survey-form">
       <fieldset>
-      <label for="name" id="name-label">First Name<input type="text" name="" id="name" placeholder="atabak" required/></label>
-      <label for="family" id="family-label">Family<input type="text" name="" id="family" required placeholder="jamshidi"/></label>
-      <label for="number" id="number-label">Age<input type="number" name="" id="number" min="12" max="60" placeholder="24" required/></label>
-      <label for="email" id="email-label">Email<input type="email" name="" id="email" placeholder="atabak.jamshidi@outlook.com" required/></label>
-    </fieldset>
-    <fieldset>
-      <select name="" id="dropdown">
-        <option value="">Male</option>
-        <option value="">Female</option>
-        <option value="">Others</option>
-      </select>
-      <label for="rel-1">Single<input type="radio" name="Relation" id="rel-1" value="single"></label>
-      <label for="rel-2">Married<input type="radio" name="Relation" id="rel-2" value="married"></label>
-      <label for=""><input type="checkbox" name="Os" value="macOs" id=""></label>
-      <label for=""><input type="checkbox" name="Os" value="Windows" id=""></label>
-      <label for=""><input type="checkbox" name="Os" value="Gnu/Linux" id=""></label>
-      <label for="textarea"><textarea name="" id="textarea" cols="30" rows="5"></textarea></label>
-    </fieldset>
-    <button id="submit">Submit</button>
+        <label for="name" id="name-label">First Name<input type="text" name="" id="name" placeholder="atabak"
+            required /></label>
+        <label for="family" id="family-label">Family<input type="text" name="" id="family" required
+            placeholder="jamshidi" /></label>
+        <label for="number" id="number-label">Age<input type="number" name="" id="number" min="12" max="60"
+            placeholder="24" required /></label>
+        <label for="email" id="email-label">Email<input type="email" name="" id="email"
+            placeholder="atabak.jamshidi@outlook.com" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Select your sex please<select name="" id="dropdown">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Others</option>
+          </select>
+        </label>
+        <label for="rel-1">Single<input type="radio" name="Relation" id="rel-1" value="single"></label>
+        <label for="rel-2">Married<input type="radio" name="Relation" id="rel-2" value="married"></label>
+        <p id="os-p">Which Os you prefer</p>
+        <label for="mac">macOs<input type="checkbox" name="Os" value="macOs" id="mac"></label>
+        <label for="win">Windows<input type="checkbox" name="Os" value="Windows" id="win"></label>
+        <label for="linux">Gnu/Linux<input type="checkbox" name="Os" value="Gnu/Linux" id="linux"></label>
+        <label for="textarea"><textarea name="" id="textarea" cols="30" rows="5" placeholder="you can write your reasons here"></textarea></label>
+      </fieldset>
+      <button id="submit">Submit</button>
     </form>
   </div>
 </body>
